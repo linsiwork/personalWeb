@@ -1,0 +1,126 @@
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+}
+html{height: 100%;}
+body{height: 100%;}
+
+header{
+    display:flex;
+    background-color: #909B9C;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow:0px 5px 8px rgb(61, 61, 61);
+    position: fixed;
+    width: 100%;
+    z-index: 8;    
+  }
+  nav ul {
+    display:flex;
+    flex-wrap: wrap;
+    }          
+nav ul li { 
+            list-style: none;
+            
+            margin: 10px;
+            
+        }
+nav ul li a{color: #F9F1F1;text-align: left;text-decoration: none;font-size: 1.5rem;}
+p{font-size: 1.5rem;margin-left: 3rem; }
+main{
+    width: 100%;
+    height:100%;
+    background-color: #FCF2F2;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+div.ba{
+   
+    position: absolute;
+    text-align: center;
+    background-color: #E1D0CA;
+    width:25vw;
+    height: 100%;
+    flex:0 1 400px;
+    z-index: 1;
+}
+section.pit{ 
+    position: relative;
+    top: 20%;
+    left: 8%;
+    z-index: 3;
+    background-color: #FEC1AB ; 
+   
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center ;
+    flex:0 3 400px;
+    flex-wrap: wrap;
+    box-shadow:1px 6px 9px rgb(61, 61, 61);
+}
+.pit .mypiture{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+ }
+ .pit hr{ 
+    width: 300px;
+    border: #909B9C 2px solid;
+    margin: 10px;
+}
+.pit p{
+    margin-left: -1px;
+    line-height: 50px;
+    font-size: 2rem;
+}
+.pit .flow{
+    /* padding-top: 30px;
+    padding-bottom: 21px; */
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center; 
+    margin-top: 80px;
+    
+}
+
+.pit .flow img{
+    position: absolute;
+    bottom: 40px;
+    margin-left: -25px;
+    width: 50px;
+}
+
+section.biog{
+   
+    position: absolute;
+    top: 20%;
+    left:  700px;
+    width: 50%;
+    height: 60%;
+    z-index: 4;
+    display: flex;   
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    word-wrap: break-word;
+    text-align: left; 
+    flex: 4 1 150px;                     
+}
+section.biog p {width: 80%;}
+
+@media screen and(max-width) {
+    
+}
