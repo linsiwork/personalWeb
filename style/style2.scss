@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+}
+html{height: 100%;}
+body{height: 100%;background-color: #E1D0CA; }
+header{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #909B9C;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow:0px 5px 8px rgb(61, 61, 61);
+    width: 100%;
+    z-index: 8;
+    position: relative;
+    
+    nav ul {
+        flex: 1 3 400px;
+        display:flex;
+        flex-wrap: wrap;
+        li { 
+            list-style: none;
+            
+            margin: 10px;
+            .onli{color: #FEC1AB;}
+            a{color: #F9F1F1;text-align: left;text-decoration: none;font-size: 1.5rem;}
+            a:hover{color: #fcaf93;}
+        }
+        } 
+        p{  flex: 1 2 400px;
+            font-size: 1.5rem;
+            margin-left: 3rem; }
+
+  }
+  main{
+    margin: 50px;
+    width: 90%;
+    font-size: 2rem;
+    div.myresume{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h4{margin: 10px;
+        width: 100%;
+        border:rgb(233, 96, 130) dashed 2px ;
+        padding:10px;
+        text-align: center;
+        }
+    
+        .pFl { text-align: left;}
+   
+
+
+  }
+  @media screen and(max-width:700px) {
+    header{
+
+        justify-content: center;
+        align-content: center;}}
+  
+   // .myresume{
+        
+        
+    //     width: 100%;
+    //     table{
+            
+    //         text-align: center;
+    //         border-spacing: 20px;
+    //         border-top-style:solid
+    //     }
+    //     td{
+    //         border-bottom-style:solid
+        
+    //     }
+    // }
