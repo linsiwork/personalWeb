@@ -12,13 +12,13 @@ html {
 
 body {
   height: 100%;
-  background-color: #FCF2F2;
+  background-color: #fcf2f2;
 }
 
 header {
   display: flex;
   flex-wrap: wrap;
-  background-color: #909B9C;
+  background-color: #909b9c;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 5px 8px rgb(61, 61, 61);
@@ -36,10 +36,10 @@ header nav ul li {
   margin: 10px;
 }
 header nav ul li .onli {
-  color: #FEC1AB;
+  color: #fec1ab;
 }
 header nav ul li a {
-  color: #F9F1F1;
+  color: #f9f1f1;
   text-align: left;
   text-decoration: none;
   font-size: 1.5rem;
@@ -60,11 +60,10 @@ main {
   flex-wrap: wrap;
 }
 main div.ba {
-  flex: 1 1 250px;
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: #E1D0CA;
+  background-color: #e1d0ca;
   width: 25%;
   height: 100%;
   z-index: 1;
@@ -73,9 +72,9 @@ main section.pit {
   width: 20%;
   margin: 150px 60px;
   z-index: 3;
-  background-color: #FEC1AB;
+  background-color: #fec1ab;
   margin-left: 15%;
-  height: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -93,7 +92,7 @@ main section.pit .mypiture {
 main section.pit hr {
   width: 50%;
   height: 0%;
-  border: #909B9C 2px solid;
+  border: #909b9c 2px solid;
   margin: 10px;
 }
 main section.pit p {
@@ -134,10 +133,10 @@ main section.biog p {
   }
   main section.pit {
     width: 300px;
-    height: 50%;
+    height: 100%;
   }
   main section.pit hr {
-    border: #909B9C 2px solid;
+    border: #909b9c 2px solid;
     margin: 10px;
   }
   main section.pit p {
@@ -166,7 +165,7 @@ main section.biog p {
     flex-direction: column;
   }
   main section.pit hr {
-    border: #909B9C 2px solid;
+    border: #909b9c 2px solid;
     margin: 10px;
   }
   main section.pit p {

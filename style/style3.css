@@ -60,8 +60,7 @@ main {
   margin-top: 5%;
   justify-content: space-evenly;
   align-items: flex-start;
-  -moz-columns: 2 50%;
-       columns: 2 50%;
+  columns: 2 50%;
 }
 main hr {
   width: 10px;
