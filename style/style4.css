@@ -12,13 +12,13 @@ html {
 
 body {
   height: 100%;
-  background-color: #E1D0CA;
+  background-color: #e1d0ca;
 }
 
 header {
   display: flex;
   flex-wrap: wrap;
-  background-color: #909B9C;
+  background-color: #909b9c;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 5px 8px rgb(61, 61, 61);
@@ -36,10 +36,10 @@ header nav ul li {
   margin: 10px;
 }
 header nav ul li .onli {
-  color: #FEC1AB;
+  color: #fec1ab;
 }
 header nav ul li a {
-  color: #F9F1F1;
+  color: #f9f1f1;
   text-align: left;
   text-decoration: none;
   font-size: 1.5rem;
@@ -114,7 +114,7 @@ main .web .le button {
   height: 60px;
   font-size: 2rem;
   border-radius: 50px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 main .web .le button a {
   text-decoration: none;
@@ -140,7 +140,7 @@ main .web .le button a:hover {
     margin: 10px 80px;
   }
   main .web {
-    height: 100vh;
+    height: 120vh;
     margin: 5px;
     flex-direction: column;
     align-items: center;
