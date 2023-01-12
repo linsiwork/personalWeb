@@ -25,53 +25,77 @@
 
     <main>
       <!-- <div class="bl"></div> -->
-      <section class="left">
-        <form action="#">
+      <section class="left" onload="init()">
+        <form enctype="text/plain" accept-charset="utf-8">
           <p>
             <label for="name">姓名: </label
             ><input
+              id="nameText"
               type="text"
-              name="姓名:"
-              value=""
-              size="10 "
-              id="name"
-              placeholder="name"
+              name="Name"
+              value
+              size="10"
+              placeholder="姓名(name)"
+              required
             />
           </p>
           <p>
             <label for="email">信箱: </label
             ><input
+              id="emailText"
               type="email"
-              name="信箱"
-              value=""
-              size="10 "
-              id="email"
+              name="Email"
+              value
+              size="10"
+              required
               placeholder="xxx@gmail.com"
             />
           </p>
           <p>
             <label for="phon">電話: </label
             ><input
-              type="text"
-              name="電話"
-              value=""
-              size="10 "
-              id="phon"
+              id="telText"
+              type="tel"
+              name="Phone"
+              value
+              size="10"
+              aria-invalid="false"
+              required
               placeholder="09xxxxxxxx"
             />
           </p>
           <p>
-            <label for="need">需求: </label
+            <label for="need">主旨: </label
             ><input
+              id="subText"
               type="text"
-              name=""
-              value=""
-              size="10 "
-              id="need"
-              placeholder="nedd"
+              name="Subject"
+              value
+              size="10"
+              aria-invalid="false"
+              placeholder="主旨(subject)"
+              required
             />
           </p>
-          <input type="submit" value="送出" id="sub" />
+          <p>
+            <textarea
+              id="bodyText"
+              name="your-message"
+              cols="20"
+              rows="10"
+              aria-required="true"
+              aria-invalid="false"
+              placeholder="你的訊息(Your Message)"
+              required
+            ></textarea>
+          </p>
+          <input
+            type="button"
+            value="送出訊息"
+            onclick="submitHandler();"
+            id="sub"
+          />
+          <a id="mailTo"></a>
         </form>
       </section>
       <hr />
@@ -94,4 +118,32 @@
       </section>
     </main>
   </body>
+  <script>
+    //宣告預設表單內容為空 （你想要的話也可以加東西）
+    var initSubject = "",
+      initBody = "";
+
+    //按下傳送按鈕後執行
+    function submitHandler() {
+      var to = "linsiwork@gmail.com"; //寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
+      var name = nameText.value; //讀取ID為 nameTextuser 物件中的值
+      var email = emailText.value;
+      var tel = telText.value;
+      var subject = subText.value;
+      //把user填的資料都塞到 mail body 中
+      var body = "" + bodyText.value + "%0A%0A%0A"; //%0A是換行 換了三行
+      body += "From：" + nameText.value + "%0A";
+      body += "Email：" + emailText.value + "%0A";
+      body += "Tel：" + telText.value;
+      //傳送的主要程式碼
+      mailTo.href = "mailto:" + to + "?subject=" + subject + "&body=" + body;
+      mailTo.click();
+    }
+    //在body onload
+    function init() {
+      subText.value = initSubject;
+      toText.value = initTo;
+      bodyText.value = initBody;
+    }
+  </script>
 </html>
